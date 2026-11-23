@@ -1,0 +1,17 @@
+# Funções da string.h 
+
+strlen() -> retorna o tamanho da string
+
+strncpy() -> copia no maximo n caracteres 
+
+strcpy -> copia uma string pra outra 
+
+strcat -> concatena uma string em outra 
+
+strcmp -> compara 2 strings (retorna 0 se for igual)
+
+strtok -> divide uma string em partes usando delimitadores ex: Ana, Carol, Lucas 
+sairia ana,
+       carol,
+       lucas -> o delimitador seria a virgula
+
