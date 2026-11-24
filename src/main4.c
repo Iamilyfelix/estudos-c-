@@ -8,23 +8,13 @@ typedef struct{
 }Produto;
 
 int main(){
-    Produto p;
-    Produto produtos[100];
-    int quantidade;
+    float valorTotal = 0;
+    
+    Produto item = {"Camiseta", 29.99, 10};
 
-    printf("Quantos produtos vc quer cadastrar: ");
-    scanf("%d", &quantidade);
+    valorTotal = item.preco * item.quantidade;
 
-    for (int i = 0; i < quantidade; i++){
-        printf("Digite o nome do produto: ");
-        scanf("%s", &p.nome[i]);
-
-        printf("Digite o preco do produto: ");
-        scanf("%f", &p.preco[i]);
-
-        printf("Digite a quantidade do produto: ");
-        scanf("%d", &p.quantidade[i]);
-    }
+    printf("Produto: %s\nPreco: %.2f\nQuantidade: %d\nValor Total: %.2f\n", item.nome, item.preco, item.quantidade, valorTotal);
 
 
 
